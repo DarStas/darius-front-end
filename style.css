@@ -1,54 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    width: 1000px;
+    margin: 0;
+    background-image: url(https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-72369.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 200px;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header,
+article a {
+    background-color: #b3cc00;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    background-color: greenyellow;
-    padding: 10px;
+    align-items: center;
 }
 
-ul {
+header ul {
     display: flex;
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
-li {
-    list-style: none;
-    margin: 0 10px;
+header ul li:not(:last-child) {
+    margin-right: 30px;
 }
 
 main {
+    background-color: white;
     display: flex;
 }
 
-article {
-    flex: 1;
-    border: 1px solid black;
+article:nth-child(odd) {
+    margin-right: 20px;
 }
 
-img {
+article img {
     float: left;
-    margin: 20px;
+    width: 150px;
+    margin: 0 20px 20px 0;
 }
 
-p {
-    text-align: justify;
-    margin: 20px;
+article nav {
+    display: flex;
+    justify-content: right;
 }
 
-button {
-    background-color: greenyellow;
+article a {
     color: white;
-    border: none;
-    padding: 10px;
-    text-align: right;
+    padding: 20px;
+}
+
+article p {
+    text-align: justify;
 }
 
 footer {
     text-align: center;
-    margin: 10px;
-}
+    color: #b3cc00;
