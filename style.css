@@ -1,77 +1,51 @@
-* {
-    box-sizing: border-box;
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body, main {
+    height: 100%;
 }
 
 body {
-    margin: 0;
-    background-image: url(https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-72369.jpg?w=2000);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 200px;
-}
-
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-header,
-article a {
-    background-color: #b3cc00;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-header ul li:not(:last-child) {
-    margin-right: 30px;
+    background-color: rgb(189, 207, 207);
 }
 
 main {
+    max-width: 960px;
+    margin: 50px auto 0 auto;
+    
+}
+
+.card {
     background-color: white;
+    gap: 10px;
+    padding: 20px 30px;
+    box-shadow: 10px 5px 5px rgba(0,0,0,2);
     display: flex;
 }
 
-article:nth-child(odd) {
-    margin-right: 20px;
+.card-image img {
+    width: 100px;
+    height: 100 px;
+    border-radius: 100%;
 }
 
-article img {
-    float: left;
-    width: 150px;
-    margin: 0 20px 20px 0;
-}
-
-article nav {
+.card-text {
     display: flex;
-    justify-content: right;
+    gap: 10px;
+    flex-direction: column;
 }
 
-article a {
-    color: white;
-    padding: 20px;
+.card-follow {
+    display: flex;
+    gap: 10px;
+    color: gray;
 }
 
-article p {
-    text-align: justify;
+main p {
+    margin: 0;
 }
 
-footer {
-    text-align: center;
-    color: #b3cc00;
+a {
+    color: aqua;
+}
