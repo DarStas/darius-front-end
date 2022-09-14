@@ -108,18 +108,34 @@ img {
 
 .contact {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
+    gap: 10px;
 }
 
-.container {
-    width: 100%;
+form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
 input {
     display: block;
-    width: 50%;
+}
+
+.submit {
+    background-color: white;
+    border: 2px solid #cc6666;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+iframe {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 460px;
+    margin-bottom: 10px;
 }
 
 footer {
