@@ -7,10 +7,16 @@ body {
     box-sizing: border-box;
 }
 
-.layout {
+.header {
     display: grid;
-    align-content: center;
-    background-color: black;
+    grid-template-columns: 5px 1fr 5px;
+    grid-template-areas:
+        ". header .";
+}
+
+.header {
+    grid-area: header;
+    grid-column: 2;
 }
 
 .layout {
@@ -20,14 +26,13 @@ body {
 
 .header__navigation--ul {
     display: grid;
-    grid-column: ;
     justify-items: end;
     align-content: center;
     list-style: none;
     color: white;
     gap: 20px;
     display: none;
-    
+
 }
 
 .header__navigation--img {
@@ -35,7 +40,7 @@ body {
     width: 50px;
     object-fit: cover;
     justify-self: center;
-    
+
 }
 
 h2 {
@@ -68,7 +73,7 @@ button {
     justify-items: center;
     padding: 10px;
     width: 200px;
-    
+
 }
 
 footer {
@@ -95,7 +100,8 @@ footer {
     }
 
     main {
-        display: grid;;
+        display: grid;
+        ;
     }
 
     div {
@@ -107,4 +113,3 @@ footer {
         object-fit: cover;
     }
 }
-
