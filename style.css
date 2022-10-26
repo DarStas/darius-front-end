@@ -1,40 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(37, 37, 37);
     margin: 0;
 }
 
-div {
-    width: 50px;
-    height: 50px;
-    background: rgb(108, 108, 162);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    animation-name: spin;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-        border-radius: 0px;
-        background: rgb(108, 108, 162);
-    }
-
-    50% {
-        /* transform: rotate(100deg); */
-        border-radius: 50%;
-        background: rgb(167, 107, 107);
-    }
-
-    100% {
-        transform: rotate(360deg);
-        border-radius: 0px;
-        background: rgb(108, 108, 162);
-    }
-}
